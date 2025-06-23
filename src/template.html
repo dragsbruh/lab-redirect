@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <header-tags />
+    <script>
+      const target = `https://waifustation.miku-royal.ts.net${window.location.pathname}`;
+      window.location.replace(target);
+      document.getElementById("link").setAttribute("href", target);
+    </script>
+  </head>
+  <body>
+    <div id="fallback" style="display: hidden">
+      not redirecting? click <a href="/" id="link">here</a>!!
+    </div>
+  </body>
+</html>

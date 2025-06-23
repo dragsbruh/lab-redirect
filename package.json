@@ -1,0 +1,14 @@
+{
+  "name": "lab-redirect",
+  "private": true,
+  "scripts": {
+    "build": "bun run src/index.ts"
+  },
+  "dependencies": {
+    "cheerio": "^1.1.0",
+    "html-minifier-terser": "^7.2.0"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.17"
+  }
+}
