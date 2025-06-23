@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # or whatever your default branch is
+      - main
 
 permissions:
   contents: read
@@ -24,7 +24,7 @@ jobs:
       - name: Install deps & build
         run: |
           bun install
-          bun run build  # make sure this outputs to ./dist
+          bun run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
