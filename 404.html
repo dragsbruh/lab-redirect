@@ -1,5 +1,10 @@
+<div id="fallback" style="display: hidden">
+  not redirecting? click <a href="/" id="link">here</a>!!
+</div>
+
 <script>
-  window.location.replace(
-    `https://waifustation.miku-royal.ts.net` + window.location.pathname
-  );
+  const target = `https://waifustation.miku-royal.ts.net${window.location.pathname}`;
+
+  window.location.replace(target);
+  document.getElementById("link").setAttribute("href", target);
 </script>
